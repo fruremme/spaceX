@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpaceX - making life multiplanetary</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Exo+2:wght@500;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" title="take me home">
+                    <img src="img/SpaceX_logo.svg" alt="logo" class="logo"></a>
+            </div>
+
+            <ul id="menu"> 
+                <li><a href="html/launch.html">LAUNCHES</a></li>
+                <li><a href="html/ticket.html">TICKETS</a></li>
+                <li><a href="html/history.html">SPACE HISTORY</a></li>
+                <li><a href="html/contact.html">CONTACT US</a></li>
+            </ul>
+
+            <button class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+    </header>
+    
+    <div class="videowrapper">
+        <video autoplay loop muted playsinline id="indexvideo">
+            <source src="img/mars_sunrise.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h2>
+                Next generation fully reusable launch vehicles,
+                capable of carrying humans to Mars and other destinations in the solar system
+            </h2>
+            <h1>NEXT LAUNCH</h1>
+            <h5 class="countDown">
+                <div id="days">
+                    <span>0</span>
+                    Days
+                </div>
+                
+                <div id="hours">
+                    <span>0</span>
+                    Hours
+                </div>
+                
+                <div id="minutes">
+                    <span>00</span>
+                    Minutes
+                </div>
+                
+                <div id="seconds">
+                    <span>00</span>
+                    Seconds
+                </div>
+            </h5>
+        </div>
+    </div>
+
+    <div class="headline">
+        <h2>
+            Next generation fully reusable launch vehicles,<br>
+            capable of carrying humans to Mars<br> 
+            and other destinations in the solar system
+        </h2>
+    </div>
+   
+
+    <div class="wrapper">
+        <a class="box" href="html/launch.html">
+            <h6>UPCOMING LAUNCHES</h6>
+            <img src="img/rocket.svg">
+        </a>
+        <a class="box" href="html/history.html">
+            <h6>HISTORY AND FUTURE OF SPACE EXPLORATION</h6> 
+            <img src="img/telescope.svg">
+        </a>
+        <a class="box" href="html/ticket.html">
+            <h6>SPACE TICKETS</h6>
+            <img src="img/ticket.svg">
+        </a>
+         
+    </div>
+
+    <video autoplay loop muted playsinline id="indexvideo">
+        <source src="img/mars_upside_down.mp4" type="video/mp4" >
+    </video>
+
+    <div class="musktext">
+        <h3>
+            “You want to wake up in the morning and think the future is going to be great - 
+            and that’s what being a spacefaring civilization is all about. 
+            <br> It’s about believing in the future
+            and thinking that the future will be better than the past. 
+            And I can’t think of anything more exciting than going out there
+            and being among the stars.”
+        </h3>
+        <h4>-Elon Musk</h4>
+    </div>
+
+    <footer>
+        <img src="img/SpaceX_logo.svg" alt="logo" class="footerlogo">
+        <img src="img/sm.svg" alt="social media icons" class="footerSM">
+        <h4>Copyright &copy; fruremme &#9829; SpaceX 2021</h4>
+    </footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>

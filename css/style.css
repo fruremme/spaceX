@@ -1,0 +1,533 @@
+html {
+    background-color: #070808;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    padding-left: 50px;
+    height: 4vw;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #F87145;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 48px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px #F87145;
+    text-align: center;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+h3 {
+    font-size: 28px;
+    color: white;
+    font-family: 'Caveat';
+    text-align: center;
+    margin: 20px;
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px;
+}
+
+h5 {
+    font-size: 56px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 2px;
+}
+
+h6 {
+    font-size: 33px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 77px;
+}
+
+h6:hover {
+    color: #F87145;
+}
+
+.countDown {
+    display: flex;
+}
+
+.countDown div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+}
+
+#indexvideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.videowrapper { 
+    position: relative;
+}
+
+.overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headline { 
+    visibility: hidden;
+    height: 0;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    margin-left: auto;
+}
+
+.burger-menu {
+    display: flex !important;
+    flex-direction: column;
+    margin-left: auto;
+    width: auto !important;
+}
+
+.burger-menu li {
+    margin-bottom: 10px;
+}
+
+.burger {
+    background: transparent;
+    border: 0;
+    padding: 5px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: 10px;
+    box-sizing: content-box;
+    display: none;
+}
+
+.burger > div {
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #070808;
+    height: 70px;
+}
+
+.navbar a {
+    font-family: 'Exo 2', sans-serif;
+    color: #F87145; 
+    text-align: center;
+    padding-top: 16px;
+    padding-right: 45px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: ghostwhite;
+}
+
+.wrapper {
+    background-color: #070808;
+}
+
+.box {
+    background-color: #1F1F1F;
+    font-size: 30px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    color: white;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.submitbutton {
+    background-color: #F87145;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+}
+
+.ticketbutton {
+    background-color: #070808;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+}
+
+.submitbutton:hover {
+    background-color: #cf5a34;
+}
+
+.ticketbutton:hover {
+    background-color: #cf5a34;
+}
+
+.input_box, .input_box_message, input {
+    background-color: #1F1F1F;
+    color: white;
+    margin-left: 134px;
+    display: table;
+    width: 600px;
+    border-style: none;
+    border-radius: 8px;
+    height: 44px;
+    margin-bottom: 15px;
+}
+
+.input_box_message {
+   height: 200px;
+}
+
+.error {
+    color: red;
+}
+
+#success {
+    color: green;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+label {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.launchWrapper, .ticketWrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.launchbox {
+    background-color: #070808;
+    color: white;
+    width: 850px;
+    border-style: outset;
+    border-color: white;
+    padding: 50px;
+}
+
+.launchbox dt {
+    visibility: hidden;
+}
+
+.launchbox dd {
+    font-family: 'Exo 2', sans-serif;;
+    font-size: 20px;
+}
+
+.ticket {
+    color: white;
+    width: 850px;
+    border-style: outset;
+    border-color: #F87145;
+    background-color: #1F1F1F;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.historyWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history {
+    color: white;
+    width: 800px;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.musktext {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+footer {    
+    background-color: #070808;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footerlogo {
+    height: 100px;
+}
+
+.footerSM {
+    height: 40px;
+}
+
+
+@media only screen and (max-width: 2100px) {
+   
+    h2, h1{
+       font-size: 25px;
+       margin: 5px;
+       padding-left: 100px;
+       padding-right: 100px;
+   }
+
+   .countDown {
+       font-size: 21px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    
+    .logo {
+        padding-left: 10px;
+        height: 6vw;
+    }
+    
+    #menu {
+      display: none;
+    }
+
+    #burger-menu {
+      display: none;
+    }
+    
+    .navbar {
+        margin-top: 40px;
+        height: 80px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .headline h2 {
+        font-size: 18px;
+        color: #F87145;
+        margin-top: 25px;
+        padding-left: 6px;
+        padding-right: 6px;
+        text-shadow: 0 0;
+    }
+
+    h1, h3, h6 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h5 {
+        font-size: 23px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .box {
+        font-size: 20px;
+        margin: 10px;
+        height: 160px;
+    }
+
+    .box img {
+        max-width: 70px;
+    }
+
+    .headline {
+        visibility: inherit;
+        height: 100px;
+    }
+
+    .overlay h2 {
+        visibility: hidden;
+    }
+
+    .countDown {
+        margin-bottom: 300px;
+    }
+
+    .input_box, .input_box_message, input {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .submitbutton {
+        width: 150px;
+    }
+
+    .launchbox, .history, .ticket {
+        width: 380px;
+        padding: 20px;
+    }
+    
+    .launchbox dd {
+        font-size: 15px;
+    }
+
+    .musktext {
+        margin: 5px;
+    }
+
+    .ticketvideo {
+        width: 100%;
+    }
+
+    .footerSM {
+        height: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    
+    .headline h2 {
+        font-size: 14px;
+        color: #F87145;
+        margin-top: 15px;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-shadow: 0 0;
+    }
+ 
+    .countDown {
+        font-size: 18px;
+    }
+
+    .launchbox, .history, .ticket {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .ticketbutton {
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    
+    #burger-menu {
+      display: none !important;
+    }
+}

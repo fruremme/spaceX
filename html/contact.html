@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpaceX - contact us</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Exo+2:wght@500;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html" title="take me home">
+                    <img src="../img/SpaceX_logo.svg" alt="logo" class="logo"></a>
+            </div>
+
+       
+            <ul id="menu"> 
+                <li><a href="../html/launch.html">LAUNCHES</a></li>
+                <li><a href="../html/ticket.html">TICKETS</a></li>
+                <li><a href="../html/history.html">SPACE HISTORY</a></li>
+                <li><a class="active" href="../html/contact.html">CONTACT US</a></li>
+            </ul>
+
+            <button class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+    </header>
+
+    <h2>Launch a message</h2>
+
+    <div class="contactform">
+
+        <div class="input_box">
+            <label for="first">First name</label>
+            <input type="text" name="first" id="firstName" placeholder="Enter your first name">
+            <p id="firstNameError" class="hidden error">first name must me longer than 1 character</p>
+        </div>
+        <div class="input_box">
+            <label for="last">Last name</label>
+            <input type="text" name="last" id="lastName" placeholder="Enter your last name">
+            <p id="lastNameError" class="hidden error">last name must me longer than 1 character</p>
+        </div>
+        <div class="input_box">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email address">
+            <p id="emailError" class="hidden error">Please input valid email address</p>
+        </div>
+        <div class="input_box">
+            <label for="phone">Phone number</label>
+            <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+            <p id="phoneError" class="hidden error">Please input valid phone number</p>
+        </div>
+        <div class="input_box_message">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" placeholder="Write your message">
+            <p id="messageError" class="hidden error">Message needs to be greater than 9 characters</p>
+        </div>
+
+        <button class="submitbutton" id="submit">SEND</button>
+
+        <div id="success" class="hidden error">Your message is sent</div>
+    </div>
+
+    <a class="box" href="../html/ticket.html">
+        <h6>Take a look at space tickets</h6>
+        <img src="../img/ticket.svg">
+    </a>
+    
+    <a class="box" href="../html/history.html">
+        <h6>Take a look at some historical events in space exploration</h6> 
+        <img src="../img/telescope.svg">
+    </a>
+
+    <div class="musktext">
+        <h3>
+            “When Henry Ford made cheap reliable cars,
+            people said, "Nah.. what is wrong with a horse?" <br>
+            That was a huge bet he made, and it worked!”
+        </h3>
+        <h4>-Elon Musk</h4>
+    </div>
+
+    <footer>
+        <img src="../img/SpaceX_logo.svg" alt="logo" class="footerlogo">
+        <img src="../img/sm.svg" alt="social media icons" class="footerSM">
+        <h4>Copyright &copy; fruremme &#9829; SpaceX 2021</h4>
+    </footer>
+
+    <script src="../js/burger.js"></script>
+    <script src="../js/contactForm.js"></script>
+</body>
+</html>
